@@ -2,7 +2,7 @@ let applyChanges = false;
 let GM = game.users.filter(user => user.active && user.isGM);
 let users = []
 game.actors.forEach(user => user.items.forEach(a => {
-    if (a.name == "交際 (心理學)") {
+    if (a.name.match(/心理學/)) {
         users.push(user)
     }
 }));
@@ -39,7 +39,7 @@ function createMessage(html) {
     for (let user of users) {
         if (html.find('[name="' + user.id + '"]')[0].checked) {
             user.items.forEach(a => {
-                if (a.name == "交際 (心理學)") {
+                if (a.name.match(/心理學/)) {
                     applyChanges = true;
                     let roll = new Roll("1d100").roll().total
                     if (roll <= a.base) //stuff
