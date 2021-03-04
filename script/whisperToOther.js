@@ -1,7 +1,7 @@
 //私訊他人
 /** 
  * Provides a dialog to whisper specific players. If you have tokens selected, it will automatically default to try and whisper those players.
- * @Author: Nelson#3570
+ * @Author: Nelson#3570, SAD
  */
 
 let applyChanges = false;

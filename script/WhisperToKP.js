@@ -1,3 +1,4 @@
+//向KP私訊
 let users = game.users.filter(user => user.active && user.isGM);
 new Dialog({
     title: "Whisper",

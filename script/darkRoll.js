@@ -1,3 +1,4 @@
+//向KP暗骰
 let users = game.users.filter(user => user.active && user.isGM);
 var targets = [];
 for (let user of users) {

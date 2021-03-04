@@ -1,3 +1,4 @@
+//心理學暗骰
 let applyChanges = false;
 let GM = game.users.filter(user => user.active && user.isGM);
 let users = []
