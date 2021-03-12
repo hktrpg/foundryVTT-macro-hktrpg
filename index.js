@@ -1,15 +1,19 @@
 //let diyMacro = new Macro.create({name:"XX"});
-Macro.create({
-    name: 'XXX',
-    command: "some Thing",
-    img: "icons/svg/dice-target.svg",
-    permission: {
-        default: 3
-    },
-    scope: "global",
-    sort: 100001,
-    type: "script"
-})
+
+function createMacro(data) {
+    Macro.create({
+        name: data.name,
+        command: data.command,
+        img: "icons/svg/dice-target.svg",
+        permission: {
+            default: 3
+        },
+        scope: "global",
+        sort: 100001,
+        type: "script"
+    })
+}
+//彈出選項讓人選擇滙入那個
 //game.user.assignHotbarMacro(diyMacro, 4);
 let a = game.macros.filter((m) => true);
 //a.name='23'
