@@ -11,7 +11,7 @@ Macro.create({
     type: "script"
 })
 //game.user.assignHotbarMacro(diyMacro, 4);
-let a = game.macros.filter((m) => true)[0];
+let a = game.macros.filter((m) => true);
 //a.name='23'
 console.log('game.macros AAAAAAAA', game.macros.filter((m) => true))
 //game.user.assignHotbarMacro(diyMacro, 4);
